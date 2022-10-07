@@ -52,4 +52,13 @@ endmodule
 ## Observations
 ![image](https://user-images.githubusercontent.com/84026974/194597492-ab7cb4a3-0af2-4790-8261-d33fe021e2ee.png)
 
+## Steps to generate NgVeri Model
+1. Open eSim.
+2. Run NpVeri-Makerchip
+3. Add top level verilog file in Makerchip Tab
+4. Click on NgVeri tab
+5. Add dependency files
+6. Click on Run Verilog to NgSpice converter
+7. Debug if any errors
+8. Model created successfully 
 
