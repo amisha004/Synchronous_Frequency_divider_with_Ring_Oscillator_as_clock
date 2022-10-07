@@ -103,6 +103,10 @@ endmodule
 ```
 
 ## Observations
+### Makerchip Output:
+![image](https://user-images.githubusercontent.com/84026974/194626615-bb9b78db-f553-446b-a2af-a0191de4d8c3.png)
+
+### Frequency Divider circuit Output:
 ![image](https://user-images.githubusercontent.com/84026974/194597492-ab7cb4a3-0af2-4790-8261-d33fe021e2ee.png)
 
 ## Steps to generate NgVeri Model
