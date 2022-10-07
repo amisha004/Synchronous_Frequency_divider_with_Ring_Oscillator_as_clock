@@ -1,0 +1,28 @@
+* C:\Users\Amisha\eSim-Workspace\Frequency_divider_amisha\Frequency_divider_amisha.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 07-Oct-22 8:02:48 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC2  Net-_SC1-Pad1_ CLK GND GND sky130_fd_pr__nfet_01v8		
+SC5  Net-_SC4-Pad1_ Net-_SC1-Pad1_ GND GND sky130_fd_pr__nfet_01v8		
+SC8  CLK Net-_SC4-Pad1_ GND GND sky130_fd_pr__nfet_01v8		
+SC1  Net-_SC1-Pad1_ CLK Net-_SC1-Pad3_ Net-_SC1-Pad3_ sky130_fd_pr__pfet_01v8		
+SC4  Net-_SC4-Pad1_ Net-_SC1-Pad1_ Net-_SC1-Pad3_ Net-_SC1-Pad3_ sky130_fd_pr__pfet_01v8		
+SC7  CLK Net-_SC4-Pad1_ Net-_SC1-Pad3_ Net-_SC1-Pad3_ sky130_fd_pr__pfet_01v8		
+SC3  Net-_SC1-Pad1_ GND sky130_fd_pr__cap_mim_m3_1		
+SC6  Net-_SC4-Pad1_ GND sky130_fd_pr__cap_mim_m3_1		
+SC9  CLK GND sky130_fd_pr__cap_mim_m3_1		
+v1  Net-_SC1-Pad3_ GND DC		
+U3  CLK Net-_U1-Pad1_ adc_bridge_1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ amisha_frequency_divider		
+U4  Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ A B C dac_bridge_3		
+U2  CLK plot_v1		
+U5  A plot_v1		
+U6  B plot_v1		
+U7  C plot_v1		
+scmode1  SKY130mode		
+
+.end
