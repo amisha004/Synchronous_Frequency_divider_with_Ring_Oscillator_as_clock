@@ -28,6 +28,24 @@ For more details refer: https://www.makerchip.com/
 It is a tool which converts Verilog code to C++ objects.
 For more details refer: https://www.veripool.org/verilator/ 
 
-### Circuit Diagram in eSim
+## Circuit Diagram in eSim
 The following is the schematic in eSim:
 ![image](https://user-images.githubusercontent.com/84026974/194596033-0b124063-a7d6-4929-b6a3-65bf616dfdff.png)
+
+## Verilog Code
+### 3-bit Synchronous Counter
+```
+module amisha_frequency_divider(
+    input clk,
+    output reg [2:0] Fout
+    );
+	 
+initial
+Fout = 3'b000;
+always @(negedge clk)
+Fout <= Fout + 1'b1;
+
+endmodule
+```
+
+
