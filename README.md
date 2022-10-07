@@ -1,4 +1,4 @@
-# Synchronous Frequency Divider with Ring Oscillator as clock
+# Synchronous Frequency Divider with Ring Oscillator as clock circuit
 This repository presents the design of Synchronous Frequency Divider using Ring Oscillator and 3-bit synchronous counter as a mixed signal circuit.
 The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is designed as a digital circuit. 
 
