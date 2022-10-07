@@ -6,11 +6,14 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
 In this design, a 3-bit synchronous counter is implemented using Verilog code and Ring oscillator is implemented using CMOS logic. The clock frequency of a digital system may not be suitable for operation. Hence, we may need to change it. Module performing this is called frequency divider. Counters can be used for this purpose. The clock pulses for this counter are produced by a Ring Oscillator. A closed-loop cascade connection of any odd number of inverters will display astable behaviour; such circuit are called ring oscillator.
 
 ## Reference Circuit Diagram
-### Block Diagram
+### Block Diagram:
+![WhatsApp Image 2022-10-07 at 11 31 21 PM](https://user-images.githubusercontent.com/84026974/194621295-fb090a5c-296e-43f9-87bf-b8ea8cf9355d.jpeg)
 
+### Circuit:
 ![WhatsApp Image 2022-10-07 at 11 18 04 PM](https://user-images.githubusercontent.com/84026974/194619431-5e641680-1ffc-4b4b-a1b0-dc936194e321.jpeg)
 
 ## Reference Waveform
+![image](https://user-images.githubusercontent.com/84026974/194621411-6eead154-528c-4e2a-a68f-8f2e5b51a850.png)
 
 ## Circuit Details
 ### T-flip flop counter:
