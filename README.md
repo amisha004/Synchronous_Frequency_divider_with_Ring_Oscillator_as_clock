@@ -2,6 +2,38 @@
 This repository presents the design of Synchronous Frequency Divider using Ring Oscillator and 3-bit synchronous counter as a mixed signal circuit.
 The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is designed as a digital circuit. 
 
+## Table of Content
+- [Synchronous Frequency Divider with Ring Oscillator as clock circuit](#synchronous-frequency-divider-with-ring-oscillator-as-clock-circuit)
+  * [Abstract](#abstract)
+  * [Reference Circuit Diagram](#reference-circuit-diagram)
+    + [Block Diagram:](#block-diagram-)
+    + [Circuit:](#circuit-)
+  * [Reference Waveform](#reference-waveform)
+  * [Circuit Details](#circuit-details)
+    + [T-flip flop counter:](#t-flip-flop-counter-)
+    + [Ring oscillator:](#ring-oscillator-)
+  * [Working](#working)
+  * [Software Used](#software-used)
+    + [eSim](#esim)
+    + [NgSpice](#ngspice)
+    + [Makerchip](#makerchip)
+    + [Verilator](#verilator)
+  * [Circuit Diagram in eSim](#circuit-diagram-in-esim)
+  * [Verilog Code](#verilog-code)
+    + [3-bit Synchronous Counter](#3-bit-synchronous-counter)
+    + [Makerchip Code](#makerchip-code)
+  * [Observations](#observations)
+    + [Makerchip Output:](#makerchip-output-)
+    + [Frequency Divider circuit Output:](#frequency-divider-circuit-output-)
+  * [Generated Netlist](#generated-netlist)
+  * [Steps to generate NgVeri Model](#steps-to-generate-ngveri-model)
+  * [Steps to Run simulation of my project](#steps-to-run-simulation-of-my-project)
+  * [Acknowlegdements](#acknowlegdements)
+  * [References](#references)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Abstract
 In this design, a 3-bit synchronous counter is implemented using Verilog code and Ring oscillator is implemented using CMOS logic. The clock frequency of a digital system may not be suitable for operation. Hence, we may need to change it. Module performing this is called frequency divider. Counters can be used for this purpose. The clock pulses for this counter are produced by a Ring Oscillator. A closed-loop cascade connection of any odd number of inverters will display astable behaviour; such circuit are called ring oscillator.
 
@@ -190,4 +222,4 @@ plot v(clk) v(a)+6 v(b)+12 v(c)+18
 4. Sumanto Kar, eSim Team, FOSSEE
 
 ## References
-(1)	https://dcaclab.com/blog/t-flip-flop-explained-in-detail/ 
+1. https://dcaclab.com/blog/t-flip-flop-explained-in-detail/ 
