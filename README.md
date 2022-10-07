@@ -1,7 +1,8 @@
 # Synchronous Frequency Divider with Ring Oscillator as clock
-
 This repository presents the design of Synchronous Frequency Divider using Ring Oscillator and 3-bit synchronous counter as a mixed signal circuit.
 The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is designed as a digital circuit. 
+
+## Table of Content []
 
 ## Abstract
 In this design, a 3-bit synchronous counter is implemented using Verilog code and Ring oscillator is implemented using CMOS logic. The clock frequency of a digital system may not be suitable for operation. Hence, we may need to change it. Module performing this is called frequency divider. Counters can be used for this purpose. The clock pulses for this counter are produced by a Ring Oscillator. A closed-loop cascade connection of any odd number of inverters will display astable behaviour; such circuit are called ring oscillator.
@@ -9,6 +10,17 @@ In this design, a 3-bit synchronous counter is implemented using Verilog code an
 ## Reference Circuit Diagram
 
 ## Reference Waveform
+
+## Circuit Details
+The T flip flops are useful when we need to reduce the frequency of the clock signal. If we use the original clock as flip flop clock and keep the T input at logic high then the output changes state once per clock period. This is with the assumption that the flip flop is not sensitive to both clock edges. This makes the output clock frequency as half of the frequency of the input clock. So the T flip flop works as a “Frequency Divider Circuit”.
+If we connect three T-type flip-flops, the initial input frequency will be “divided-by-two” by the first flip-flop ( ƒ ÷ 2 ) and then “divided-by-two” again by the second flip-flop ( ƒ ÷ 2 ) ÷ 2, and then “divided by two” again by the third flip-flop ((ƒ ÷ 2 ) ÷ 2) ÷ 2 giving an output frequency which has effectively been divided eight times, then its output frequency becomes one quarter value (12.5%) of the original clock frequency, (  ƒ ÷ 8 ).
+
+
+Ring oscillator is an odd number of inverters are connected in a series form with positive feedback & output oscillates between two voltage levels either 1 or zero to measure the speed of the process. The designing of the ring oscillator can be done using three inverters. If the oscillator is employed with a single-stage, then the oscillations & gain are not sufficient. If the oscillator has two inverters, then the oscillation and gain of the system are a little bit more than the single-stage ring oscillator. So this three-stage oscillator has three inverters that are connected in the form of series with a positive feedback system. So the oscillations & the gain of the system are sufficient. This is the reason to choose the three-stage oscillator.
+Ring oscillator uses an odd number of inverters to achieve more gain than a single inverting amplifier. The inverter gives a delay to the input signal and if the numbers of inverters are increases then oscillator frequency will be decreased. So the desired oscillator frequency depends on the number of inverter stages of the oscillator.
+
+
+The s frequency of oscillation formula for this oscillator is f=1/(2nT).
 
 ## Software Used
 ### eSim
