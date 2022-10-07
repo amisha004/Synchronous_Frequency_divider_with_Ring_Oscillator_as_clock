@@ -10,7 +10,7 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
     + [Circuit](#circuit)
   * [Reference Waveform](#reference-waveform)
   * [Circuit Details](#circuit-details)
-    + [T-flip flop counter](#t-flip-flop-counter)
+    + [T-flip flop counter](#3-bit T-flip flop Synchronous Counter)
     + [Ring oscillator](#ring-oscillator)
   * [Working](#working)
   * [Software Used](#software-used)
@@ -19,7 +19,7 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
     + [Makerchip](#makerchip)
   * [Circuit Diagram in eSim](#circuit-diagram-in-esim)
   * [Verilog Code](#verilog-code)
-    + [3-bit Synchronous Counter](#3-bit-synchronous-counter)
+    + [3-bit Synchronous Counter](#3-bit T-flip flop Synchronous Counter)
     + [Makerchip Code](#makerchip-code)
   * [Observations](#observations)
     + [Makerchip Output](#makerchip-output)
@@ -44,7 +44,7 @@ In this design, a 3-bit synchronous counter is implemented using Verilog code an
 ![image](https://user-images.githubusercontent.com/84026974/194621411-6eead154-528c-4e2a-a68f-8f2e5b51a850.png)
 
 ## Circuit Details
-### T-flip flop counter
+### 3-bit T-flip flop Synchronous Counter
 The T flip flops are useful when we need to reduce the frequency of the clock signal. If we use the original clock as flip flop clock and keep the T input at logic high then the output changes state once per clock period. This is with the assumption that the flip flop is not sensitive to both clock edges. This makes the output clock frequency as half of the frequency of the input clock. So the T flip flop works as a “Frequency Divider Circuit”.
 If we connect three T-type flip-flops, the initial input frequency will be “divided-by-two” by the first flip-flop ( ƒ ÷ 2 ) and then “divided-by-two” again by the second flip-flop ( ƒ ÷ 2 ) ÷ 2, and then “divided by two” again by the third flip-flop ((ƒ ÷ 2 ) ÷ 2) ÷ 2 giving an output frequency which has effectively been divided eight times, then its output frequency becomes one quarter value (12.5%) of the original clock frequency, (  ƒ ÷ 8 ).
 
@@ -78,7 +78,7 @@ The following is the schematic in eSim:
 ![image](https://user-images.githubusercontent.com/84026974/194596033-0b124063-a7d6-4929-b6a3-65bf616dfdff.png)
 
 ## Verilog Code
-### 3-bit Synchronous Counter
+### 3-bit T-flip flop Synchronous Counter
 
 ```
 module amisha_frequency_divider(
