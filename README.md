@@ -3,14 +3,16 @@ This repository presents the design of Synchronous Frequency Divider using Ring 
 The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is designed as a digital circuit. 
 
 ## Table of Content
+
 - [Synchronous Frequency Divider with Ring Oscillator as clock circuit](#synchronous-frequency-divider-with-ring-oscillator-as-clock-circuit)
+  * [Table of Content](#table-of-content)
   * [Abstract](#abstract)
   * [Reference Circuit Diagram](#reference-circuit-diagram)
     + [Block Diagram](#block-diagram)
     + [Circuit](#circuit)
   * [Reference Waveform](#reference-waveform)
   * [Circuit Details](#circuit-details)
-    + [T-flip flop counter](#3-bit T-flip flop Synchronous Counter)
+    + [3-bit T-flip flop Synchronous Counter](#3-bit-t-flip-flop-synchronous-counter)
     + [Ring oscillator](#ring-oscillator)
   * [Working](#working)
   * [Software Used](#software-used)
@@ -19,7 +21,7 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
     + [Makerchip](#makerchip)
   * [Circuit Diagram in eSim](#circuit-diagram-in-esim)
   * [Verilog Code](#verilog-code)
-    + [3-bit Synchronous Counter](#3-bit T-flip flop Synchronous Counter)
+    + [3-bit T-flip flop Synchronous Counter](#3-bit-t-flip-flop-synchronous-counter-1)
     + [Makerchip Code](#makerchip-code)
   * [Observations](#observations)
     + [Makerchip Output](#makerchip-output)
