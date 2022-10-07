@@ -6,25 +6,24 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
 - [Synchronous Frequency Divider with Ring Oscillator as clock circuit](#synchronous-frequency-divider-with-ring-oscillator-as-clock-circuit)
   * [Abstract](#abstract)
   * [Reference Circuit Diagram](#reference-circuit-diagram)
-    + [Block Diagram:](#block-diagram-)
-    + [Circuit:](#circuit-)
+    + [Block Diagram:](#block-diagram)
+    + [Circuit:](#circuit)
   * [Reference Waveform](#reference-waveform)
   * [Circuit Details](#circuit-details)
-    + [T-flip flop counter:](#t-flip-flop-counter-)
-    + [Ring oscillator:](#ring-oscillator-)
+    + [T-flip flop counter:](#t-flip-flop-counter)
+    + [Ring oscillator:](#ring-oscillator)
   * [Working](#working)
   * [Software Used](#software-used)
     + [eSim](#esim)
     + [NgSpice](#ngspice)
     + [Makerchip](#makerchip)
-    + [Verilator](#verilator)
   * [Circuit Diagram in eSim](#circuit-diagram-in-esim)
   * [Verilog Code](#verilog-code)
     + [3-bit Synchronous Counter](#3-bit-synchronous-counter)
     + [Makerchip Code](#makerchip-code)
   * [Observations](#observations)
-    + [Makerchip Output:](#makerchip-output-)
-    + [Frequency Divider circuit Output:](#frequency-divider-circuit-output-)
+    + [Makerchip Output:](#makerchip-output)
+    + [Frequency Divider circuit Output:](#frequency-divider-circuit-output)
   * [Generated Netlist](#generated-netlist)
   * [Steps to generate NgVeri Model](#steps-to-generate-ngveri-model)
   * [Steps to Run simulation of my project](#steps-to-run-simulation-of-my-project)
@@ -75,10 +74,6 @@ For more details refer: https://ngspice.sourceforge.io/docs.html
 ### Makerchip
 It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation.
 For more details refer: https://www.makerchip.com/ 
-
-### Verilator
-It is a tool which converts Verilog code to C++ objects.
-For more details refer: https://www.veripool.org/verilator/ 
 
 ## Circuit Diagram in eSim
 
