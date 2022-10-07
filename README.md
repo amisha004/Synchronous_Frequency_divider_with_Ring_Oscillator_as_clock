@@ -171,4 +171,17 @@ plot v(clk) v(a)+6 v(b)+12 v(c)+18
 8. Model created successfully 
 
 ## Steps to Run simulation of my project
-1. Open 
+1. Open a new terminal
+2. Clone this project using the following command: 
+`https://github.com/amisha004/Synchronous_Frequency_divider_with_Ring_Oscillator_as_clock.git`
+3. Change directory:
+`cd Frequency_divider_amisha`
+4. Run ngspice:
+`ngspice Frequency_divider_amisha.cir.out`
+5. To run the project in eSim:
+- Run eSim
+- Load the project
+- Open eeSchema
+
+
+
