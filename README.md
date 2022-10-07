@@ -109,6 +109,57 @@ endmodule
 ### Frequency Divider circuit Output:
 ![image](https://user-images.githubusercontent.com/84026974/194597492-ab7cb4a3-0af2-4790-8261-d33fe021e2ee.png)
 
+## Generated Netlist
+
+```
+* c:\users\amisha\esim-workspace\frequency_divider_amisha\frequency_divider_amisha.cir
+
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+xsc2 net-_sc1-pad1_ clk gnd gnd sky130_fd_pr__nfet_01v8 
+xsc5 net-_sc4-pad1_ net-_sc1-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 
+xsc8 clk net-_sc4-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 
+xsc1 net-_sc1-pad1_ clk net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 
+xsc4 net-_sc4-pad1_ net-_sc1-pad1_ net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 
+xsc7 clk net-_sc4-pad1_ net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 
+xsc3 net-_sc1-pad1_ gnd sky130_fd_pr__cap_mim_m3_1 W=110500 L=10000 MF=1
+xsc6 net-_sc4-pad1_ gnd sky130_fd_pr__cap_mim_m3_1 W=110500 L=10000 MF=1
+xsc9 clk gnd sky130_fd_pr__cap_mim_m3_1 W=110500 L=10000 MF=1
+v1 net-_sc1-pad3_ gnd  dc 2.5
+* u3  clk net-_u1-pad1_ adc_bridge_1
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ amisha_frequency_divider
+* u4  net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ a b c dac_bridge_3
+* u2  clk plot_v1
+* u5  a plot_v1
+* u6  b plot_v1
+* u7  c plot_v1
+* s c m o d e
+a1 [clk ] [net-_u1-pad1_ ] u3
+a2 [net-_u1-pad1_ ] [net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ ] u1
+a3 [net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ ] [a b c ] u4
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             amisha_frequency_divider, NgSpice Name: amisha_frequency_divider
+.model u1 amisha_frequency_divider(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             dac_bridge_3, NgSpice Name: dac_bridge
+.model u4 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.tran 50e-03 20e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(clk) v(a)+6 v(b)+12 v(c)+18
+.endc
+.end
+```
+
 ## Steps to generate NgVeri Model
 1. Open eSim.
 2. Run NpVeri-Makerchip
