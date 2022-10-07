@@ -34,21 +34,21 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
 In this design, a 3-bit synchronous counter is implemented using Verilog code and Ring oscillator is implemented using CMOS logic. The clock frequency of a digital system may not be suitable for operation. Hence, we may need to change it. Module performing this is called frequency divider. Counters can be used for this purpose. The clock pulses for this counter are produced by a Ring Oscillator. A closed-loop cascade connection of any odd number of inverters will display astable behaviour; such circuit are called ring oscillator.
 
 ## Reference Circuit Diagram
-### Block Diagram:
+### Block Diagram
 ![WhatsApp Image 2022-10-07 at 11 31 21 PM](https://user-images.githubusercontent.com/84026974/194621295-fb090a5c-296e-43f9-87bf-b8ea8cf9355d.jpeg)
 
-### Circuit:
+### Circuit
 ![WhatsApp Image 2022-10-07 at 11 18 04 PM](https://user-images.githubusercontent.com/84026974/194619431-5e641680-1ffc-4b4b-a1b0-dc936194e321.jpeg)
 
 ## Reference Waveform
 ![image](https://user-images.githubusercontent.com/84026974/194621411-6eead154-528c-4e2a-a68f-8f2e5b51a850.png)
 
 ## Circuit Details
-### T-flip flop counter:
+### T-flip flop counter
 The T flip flops are useful when we need to reduce the frequency of the clock signal. If we use the original clock as flip flop clock and keep the T input at logic high then the output changes state once per clock period. This is with the assumption that the flip flop is not sensitive to both clock edges. This makes the output clock frequency as half of the frequency of the input clock. So the T flip flop works as a “Frequency Divider Circuit”.
 If we connect three T-type flip-flops, the initial input frequency will be “divided-by-two” by the first flip-flop ( ƒ ÷ 2 ) and then “divided-by-two” again by the second flip-flop ( ƒ ÷ 2 ) ÷ 2, and then “divided by two” again by the third flip-flop ((ƒ ÷ 2 ) ÷ 2) ÷ 2 giving an output frequency which has effectively been divided eight times, then its output frequency becomes one quarter value (12.5%) of the original clock frequency, (  ƒ ÷ 8 ).
 
-### Ring oscillator:
+### Ring oscillator
 Ring oscillator is an odd number of inverters are connected in a series form with positive feedback & output oscillates between two voltage levels either 1 or zero to measure the speed of the process. The designing of the ring oscillator can be done using three inverters. If the oscillator is employed with a single-stage, then the oscillations & gain are not sufficient. If the oscillator has two inverters, then the oscillation and gain of the system are a little bit more than the single-stage ring oscillator. So this three-stage oscillator has three inverters that are connected in the form of series with a positive feedback system. So the oscillations & the gain of the system are sufficient. This is the reason to choose the three-stage oscillator.
 Ring oscillator uses an odd number of inverters to achieve more gain than a single inverting amplifier. The inverter gives a delay to the input signal and if the numbers of inverters are increases then oscillator frequency will be decreased. So the desired oscillator frequency depends on the number of inverter stages of the oscillator.
 
@@ -127,10 +127,10 @@ endmodule
 ```
 
 ## Observations
-### Makerchip Output:
+### Makerchip Output
 ![image](https://user-images.githubusercontent.com/84026974/194626615-bb9b78db-f553-446b-a2af-a0191de4d8c3.png)
 
-### Frequency Divider circuit Output:
+### Frequency Divider circuit Output
 ![image](https://user-images.githubusercontent.com/84026974/194597492-ab7cb4a3-0af2-4790-8261-d33fe021e2ee.png)
 
 ## Generated Netlist
