@@ -170,3 +170,5 @@ plot v(clk) v(a)+6 v(b)+12 v(c)+18
 7. Debug if any errors
 8. Model created successfully 
 
+## Steps to Run simulation of my project
+1. Open 
