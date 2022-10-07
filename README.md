@@ -183,5 +183,11 @@ plot v(clk) v(a)+6 v(b)+12 v(c)+18
 - Load the project
 - Open eeSchema
 
+## Acknowlegdements
+1. FOSSEE, IIT Bombay
+2. Steve Hoover, Founder, Redwood EDA
+3. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com 
+4. Sumanto Kar, eSim Team, FOSSEE
 
-
+## References
+(1)	https://dcaclab.com/blog/t-flip-flop-explained-in-detail/ 
