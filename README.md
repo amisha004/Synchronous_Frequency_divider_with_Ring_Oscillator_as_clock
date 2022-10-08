@@ -185,6 +185,15 @@ plot v(clk) v(a)+6 v(b)+12 v(c)+18
 .endc
 .end
 ```
+### Applications of Frequency divider:
+
+
+Frequency Divider Circuits or Frequency Dividers are an integral part of many communication and audio based systems like:
+- Frequency Synthesizers.
+- Audio Equipment.
+- Radar and Satellite Communication.
+- Military Equipment.
+- RF Devices.
 
 ## Steps to generate NgVeri Model
 1. Open eSim.
