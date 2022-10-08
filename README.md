@@ -27,6 +27,7 @@ The Ring Oscillator is designed as an Analog circuit while the 3-bit Counter is 
     + [Makerchip Output](#makerchip-output)
     + [Frequency Divider circuit Output](#frequency-divider-circuit-output)
   * [Generated Netlist](#generated-netlist)
+  * [Applications of Frequency divider](#applications-of-freqency-divider)
   * [Steps to generate NgVeri Model](#steps-to-generate-ngveri-model)
   * [Steps to Run simulation of my project](#steps-to-run-simulation-of-my-project)
   * [Acknowlegdements](#acknowlegdements)
@@ -185,7 +186,7 @@ plot v(clk) v(a)+6 v(b)+12 v(c)+18
 .endc
 .end
 ```
-### Applications of Frequency divider:
+### Applications of Frequency divider
 
 
 Frequency Divider Circuits or Frequency Dividers are an integral part of many communication and audio based systems like:
